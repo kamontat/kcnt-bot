@@ -1,3 +1,8 @@
 node_modules/
-*.js.map
+.cache/
+lib/
+logs/
+v1/
+
 .env
+*.log
