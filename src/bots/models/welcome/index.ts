@@ -1,11 +1,11 @@
 import type { ConversationState, UserState } from "botbuilder";
 import type { Dialog } from "botbuilder-dialogs";
 
-import { CardFactory } from "botbuilder";
+// import { CardFactory } from "botbuilder";
 import { runDialog } from "botbuilder-dialogs";
 import { DialogBot } from "../base";
 
-import WelcomeCard from "./resources/card.json";
+// import WelcomeCard from "./resources/card.json";
 
 export class DialogAndWelcomeBot extends DialogBot {
   constructor(
@@ -19,8 +19,8 @@ export class DialogAndWelcomeBot extends DialogBot {
       const membersAdded = context.activity.membersAdded ?? [];
       for (let cnt = 0; cnt < membersAdded.length; cnt++) {
         if (membersAdded[cnt].id !== context.activity.recipient.id) {
-          const welcomeCard = CardFactory.adaptiveCard(WelcomeCard);
-          await context.sendActivity({ attachments: [welcomeCard] });
+          // const welcomeCard = CardFactory.adaptiveCard(WelcomeCard);
+          // await context.sendActivity({ attachments: [welcomeCard] });
           await runDialog(
             dialog,
             context,
