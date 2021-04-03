@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["**/*.ts"],
+  "exclude": ["**/*.spec.ts"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "../lib",
+    "tsBuildInfoFile": "../.cache/tsbuild-packages.json",
+  },
+  "references": [
+    {
+      "path": ".."
+    }
+  ]
+}

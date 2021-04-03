@@ -1,9 +1,9 @@
 import { ActivityHandler, TurnContext } from "botbuilder-core";
 
-import { BookingDialog } from "../dialogs/booking";
-import { MainDialog } from "../dialogs/main";
-import { FlightBookingRecognizer } from "../recognizers/flight-recognizer";
-import { ConfigProvider } from "../models/config/config-provider";
+import { BookingDialog } from "@kcnt-bot/dialog/booking";
+import { MainDialog } from "@kcnt-bot/dialog/main";
+import { FlightBookingRecognizer } from "@kcnt-bot/recognizer/flight-recognizer";
+import { ConfigProvider } from "@kcnt-bot/models/config/config-provider";
 
 import { DialogAndWelcomeBot } from "./models/welcome";
 

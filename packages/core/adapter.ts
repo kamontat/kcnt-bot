@@ -1,5 +1,5 @@
 import { BotFrameworkAdapter, InputHints, TurnContext } from "botbuilder";
-import { ConfigProvider } from "src/models/config/config-provider";
+import { ConfigProvider } from "@kcnt-bot/models/config/config-provider";
 
 // See https://aka.ms/about-bot-adapter to learn more about adapters.
 export class BotAdapter extends BotFrameworkAdapter {

@@ -6,7 +6,7 @@
       "script": "scripts/start.sh",
       "instances": 1,
       "exec_mode": "fork",
-      "watch": ["src/**/*.ts", "src/**/*.json"],
+      "watch": ["packages/**/*.ts", "packages/**/*.json"],
       "watch_delay": 1000,
       "error_file": "logs/error.log",
       "out_file": "logs/output.log",

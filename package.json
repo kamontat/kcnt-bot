@@ -8,10 +8,10 @@
     "url": "https://kamontat.net"
   },
   "license": "MIT",
-  "main": "lib/src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "compile": "tsc",
-    "start": "node lib/src/index.js",
+    "compile": "tsc --build packages",
+    "start": "node lib/index.js",
     "dev:start": "pm2 start configs/pm2.config.json",
     "dev:restart": "pm2 restart configs/pm2.config.json",
     "dev:stop": "pm2 stop configs/pm2.config.json",

@@ -1,10 +1,10 @@
-import type { FlightBookingRecognizerOption } from "../../recognizers/flight-recognizer";
-import { ConversationState, MemoryStorage, UserState } from "botbuilder";
+import type { FlightBookingRecognizerOption } from "@kcnt-bot/recognizer/flight-recognizer";
 
+import { ConversationState, MemoryStorage, UserState } from "botbuilder";
 import { BotFrameworkAdapterSettings, Storage } from "botbuilder";
 
 import { Config } from "./base";
-import { name, version } from "../../../package.json";
+import { name, version } from "@kcnt-bot/package.json";
 
 export class ConfigProvider {
   private storage: Storage;
