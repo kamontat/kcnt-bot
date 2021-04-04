@@ -2,10 +2,10 @@ import { join } from "path";
 import { config } from "dotenv";
 import { createServer } from "restify";
 
-import { ConfigProvider } from "@kcnt-bot/models/config/config-provider";
-import { Config } from "@kcnt-bot/models/config/base";
+import { ConfigProvider } from "./models/config/config-provider";
+import { Config } from "./models/config/base";
 
-import { Bot, BotAdapter } from "@kcnt-bot/core";
+import { Bot, BotAdapter } from "./core";
 
 config({ path: join(process.cwd(), ".env") });
 const configProvider = new ConfigProvider(new Config());

@@ -8,7 +8,7 @@ import type {
   FlightBookingRecognizer,
   FlightFromEntity,
   FlightToEntity,
-} from "@kcnt-bot/recognizer/flight-recognizer";
+} from "../recognizer/flight-recognizer";
 
 import { MessageFactory, InputHints } from "botbuilder";
 import { LuisRecognizer } from "botbuilder-ai";
